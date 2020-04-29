@@ -144,5 +144,5 @@ class GSP:
 if __name__ == '__main__':
     transactions = [["a", "b", "c", frozenset(["c", "d"]), "d"], ["a", "a", "b", frozenset(["c", "d"])], ["a", "a"]]
 
-    alg = GSP(transactions, 0.1)
+    alg = GSP(transactions=transactions,  minsup=0.1)
     print(alg.run_alg())
